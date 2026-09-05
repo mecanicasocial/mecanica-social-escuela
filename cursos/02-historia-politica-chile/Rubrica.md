@@ -96,3 +96,24 @@ No cumple los elementos esenciales o presenta problemas sustantivos.
 ## Observación final
 
 - 
+Criterios de aprobación
+El equipo académico deberá definir en la normativa general de evaluación:
+
+Puntuación mínima de aprobación.
+Posibilidad de corrección.
+Plazo de nueva entrega.
+Tratamiento de entregas atrasadas.
+Procedimiento ante problemas de integridad académica.
+Mecanismo de revisión o apelación.
+Estos elementos no deberían quedar definidos de forma diferente en cada curso. Deben mantenerse en:
+docs/evaluacion/
+Uso formativo de la rúbrica
+La rúbrica debe publicarse antes de comenzar la actividad.
+
+Se recomienda utilizarla en tres momentos:
+
+Planificación del trabajo.
+Autoevaluación del borrador.
+Evaluación del producto final.
+
+

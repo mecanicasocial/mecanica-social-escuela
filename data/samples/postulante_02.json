@@ -1,0 +1,24 @@
+{
+    "metadata": {
+        "id": "MS-ADM-2026-002",
+        "version_schema": "v1.0.0",
+        "origen": "Mesa Técnica Regional"
+    },
+    "postulante": {
+        "nombre_completo": "Carlos Sanhueza",
+        "comuna": "San Antonio",
+        "region": "Valparaíso",
+        "organizacion_base": "Sindicato de Trabajadores Portuarios"
+    },
+    "postulacion": {
+        "modulo_preferencia": "03",
+        "titulo_preferencia": "Gestión Municipal",
+        "declaracion_objetivos": "Mi meta es comprender los marcos regulatorios y orgánicos institucionales para proponer políticas públicas locales eficientes y transparentes en el sector portuario.",
+        "horas_disponibilidad_semanal": 8
+    },
+    "auditoria_ia_previa": {
+        "score_alineacion_mision": 0.94,
+        "mitigacion_sesgo_geografico": "aprobado",
+        "clasificacion_perfil": "Gestión Técnica Local"
+    }
+}

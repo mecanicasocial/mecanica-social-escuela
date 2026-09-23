@@ -1,0 +1,16 @@
+{
+    "metadata": {
+        "id_solicitud": "REQ-2026-001",
+        "fecha_creacion": "2026-09-23T00:00:00Z"
+    },
+    "postulante": {
+        "nombre_completo": "Constanza Valenzuela",
+        "perfil": "Líder Comunitario",
+        "region": "Concepción, Chile"
+    },
+    "programa": {
+        "curso_id": "01",
+        "curso_nombre": "Democracia y Ciudadanía"
+    },
+    "justificacion": "Deseo adquirir capacidades críticas para supervisar el despliegue ético y transparente de tecnología en mi municipio."
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escuela de Formación Política Marcelo Orellana Lagos</title>
+    <!-- CDN UNIVERSAL ESTABLE DE PRODUCCIÓN -->
     <script src="https://tailwindcss.com"></script>
     <script src="https://unpkg.com"></script>
     <style>html{scroll-behavior:smooth;}.custom-scrollbar::-webkit-scrollbar{width:5px;}.custom-scrollbar::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:10px;}</style>
@@ -86,7 +87,7 @@
         function executeIntakeSimulation() {
             const name = document.getElementById("intake-name").value;
             const motivation = document.getElementById("intake-justification").value;
-            const response = { metadata: { version: "v1.0.0", timestamp: new Date().toISOString() }, solicitud: { postulante: name, curso: "Módulo 01" }, evaluacion: { admitido: motivation.length > 20, score: 0.98, analisis: "Alineado con la misión institucional de la ONG Mecánica Social." } };
+            const response = { metadata: { version: "v1.0.0", timestamp: new Date().toISOString() }, solicitud: { postulante: name, curso: "Módulo 01" }, evaluacion: { admitido: motivation.length > 20, score: 0.98, analisis: "Alineado con la misión de Mecánica Social." } };
             document.getElementById("json-output").textContent = JSON.stringify(response, null, 4);
             document.getElementById("api-response-box").classList.remove("hidden");
         }

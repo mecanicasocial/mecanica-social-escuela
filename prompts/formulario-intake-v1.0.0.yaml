@@ -1,35 +1,62 @@
-version: "1.0.0"
+version: "1.1.0"
 metadata:
   organizacion: "ONG Mecánica Social"
   escuela: "Escuela de Formación Política Marcelo Orellana Lagos"
-  proposito: "Simulador de evaluación automatizada de perfiles y alineación misional"
+  proposito: "Motor de evaluación de admisiones y pre-calificación de proyectos comunitarios"
 
 configuracion_sistema:
   temperatura: 0.1
-  max_tokens: 1000
+  max_tokens: 1200
   modelo_referencia: "gpt-4o-mini"
 
 directrices_eticas:
-  supervision_humana: "MANDATORIA. Toda recomendación del sistema debe ser ratificada por el Comité Civil."
+  supervision_humana: "MANDATORIA. La IA pre-califica borradores para aliviar la carga docente, pero no reemplaza la nota final."
   mitigacion_sesgos:
-    geografico: "Prohibido penalizar postulaciones provenientes de zonas rurales o comunas rezagadas del territorio chileno."
-    socioeconomico: "Evaluar el potencial de impacto territorial por sobre la sofisticación del lenguaje técnico empleado."
+    geografico: "Prohibido penalizar postulaciones provenientes de zonas rurales o comunas de rezago territorial."
+    socioeconomico: "Priorizar el potencial de transformación y la viabilidad del proyecto por sobre la sofisticación del lenguaje."
 
-criterios_evaluacion:
-  alineacion_mision:
-    peso: 0.40
-    descripcion: "Compromiso explícito con el fortalecimiento democrático, la participación ciudadana o la gestión comunitaria local."
-  disponibilidad_tiempo:
-    peso: 0.30
-    descripcion: "Disposición mínima de 5 horas semanales para cumplir con la malla académica modular."
-  impacto_territorial:
-    peso: 0.30
-    descripcion: "Vinculación activa con juntas de vecinos, sindicatos, colectivos o colectividades de base."
+criterios_admisión_intake:
+  alineacion_mision: 0.40
+  disponibilidad_tiempo: 0.30
+  impacto_territorial: 0.30
+
+matriz_rubrica_proyecto_final:
+  definicion_problema:
+    peso: 0.15
+    descripcion: "Claridad en la delimitación del problema comunitario a resolver."
+  evidencia_y_diagnostico:
+    peso: 0.15
+    descripcion: "Uso de datos locales, testimonios o fuentes verificables del territorio."
+  coherencia_solucion:
+    peso: 0.15
+    descripcion: "Relación directa entre el problema identificado y las acciones propuestas."
+  participacion_actores:
+    peso: 0.10
+    descripcion: "Inclusión explícitas de juntas de vecinos, colectivos o redes locales."
+  factibilidad:
+    peso: 0.15
+    descripcion: "Viabilidad técnica, de tiempo y recursos para la ejecución real."
+  impacto_esperado:
+    peso: 0.10
+    descripcion: "Resultados medibles y transformaciones concretas a corto y mediano plazo."
+  innovacion:
+    peso: 0.10
+    descripcion: "Uso creativo de herramientas participativas o metodologías innovadoras."
+  presentación_documentacion:
+    peso: 0.10
+    descripcion: "Estructura formal, redacción clara y orden metodológico del entregable."
+
+escala_evaluacion_humana:
+  4: "Sobresaliente"
+  3: "Adecuado"
+  2: "En desarrollo"
+  1: "Insuficiente"
 
 formato_salida_esperado:
   tipo: "JSON"
   campos_obligatorios:
     - "id_solicitud"
-    - "score_alineacion"
-    - "aprobado_comite_ia"
+    - "componente_evaluado"
+    - "score_final_ponderado"
+    - "desglose_criterios"
     - "analisis_justificado"

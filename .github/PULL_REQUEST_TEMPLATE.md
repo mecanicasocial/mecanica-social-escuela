@@ -1,37 +1,10 @@
----
-name: Pull Request
-about: Plantilla para PRs relacionadas con la Escuela
-labels: []
-assignees: []
----
+## 📝 Descripción
+Resume de forma clara los cambios introducidos y especifica qué cursos o documentos del ecosistema se están impactando.
 
-## Resumen
-Explica en pocas líneas qué cambios introduce este PR y por qué.
+## 🎯 Criterios de Aceptación Cumplidos (Control de Calidad)
+- [ ] El contenido respeta el marco de uso responsable de IA (`docs/ia/`).
+- [ ] Los nombres de archivos y carpetas siguen la nomenclatura estandarizada (kebab-case).
+- [ ] No existen enlaces rotos ni faltas de ortografía en los archivos Markdown.
 
-## Issue relacionado
-Closes # (añadir número de issue relacionado)
-
-## Cambios principales
-- Cambio 1
-- Cambio 2
-
-## Tipo de cambio
-- [ ] Documentación
-- [ ] Contenido curricular / pedagogía
-- [ ] Código / infraestructura
-- [ ] Otro: __________
-
-## Cómo probar / verificar
-Instrucciones para revisar el PR localmente o en staging, incluyendo steps y datos de prueba.
-
-## Checklist antes de merge
-- [ ] Tests automatizados añadidos/actualizados y pasan
-- [ ] Documentación actualizada
-- [ ] Guías y fichas revisadas
-- [ ] Consideraciones de IA comprobadas (datos, sesgos, privacidad)
-- [ ] Revisado por (nombres): @usuario1, @usuario2
-- [ ] Cambios desplegados/verificados en staging (si aplica)
-- [ ] Changelog / notas de release preparadas (si aplica)
-
-## Notas adicionales / contexto
-Información relevante, enlaces a demos, capturas o grabaciones.
+## 🔗 Vinculación Institucional
+Closes #1

@@ -50,3 +50,11 @@ Instituciones, ciudadanía y democracia.
 - Actividades grupales.
 - Mapa institucional.
 - Entregable final.
+
+
+---
+
+## 📋 PAUTA DE EVALUACIÓN Y MONITOREO
+> **Instrucción para el Docente:** Al evaluar los proyectos de este módulo, exija obligatoriamente el uso de la estructura formal de la Escuela. Los alumnos deben descargar y completar el archivo maestro, incluyendo su Intake ID y la Declaración de Ética de IA.
+
+👉 [Verificar Plantilla Maestra del Entregable Académico](../../plantillas/entregable.md)

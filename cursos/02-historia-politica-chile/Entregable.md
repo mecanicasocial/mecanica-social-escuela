@@ -208,3 +208,11 @@ Las citas aparecen en la bibliografía.
 Las imágenes indican procedencia.
 La conclusión responde la pregunta.
 El documento ha sido revisado.
+
+
+---
+
+## 📝 FORMATO OFICIAL DE ENTREGA
+> **IMPORTANTE:** Para el desarrollo y entrega de este informe, es obligatorio utilizar la plantilla institucional de la Escuela. Asegúrate de incluir tu **Intake ID** y firmar la **Declaración de Ética IA**.
+
+👉 [Descargar Plantilla Oficial del Entregable Académico (Markdown)](../../plantillas/entregable.md)

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecánica Social Escuela - Aprendizaje Abierto</title>
+    <script src="https://tailwindcss.com"></script>
+    <script src="https://unpkg.com"></script>
+    <style>
+        .custom-scrollbar::-webkit-scrollbar { width: 5px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
+        pre { white-space: pre-wrap; word-wrap: break-word; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+    <nav class="bg-slate-900 text-white text-xs py-3 px-4 border-b border-slate-800 tracking-wide font-medium">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-slate-400 font-bold">ONG MECÁNICA SOCIAL &bull; ECO-SISTEMA INTEGRADO</div>
+            <div class="flex space-x-4">
+                <span class="text-pink-400 font-bold">ms-escuela</span>
+                <span class="text-slate-400">ms-ia (Online)</span>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-pink-600 text-white p-2 rounded-lg font-black text-lg">MS</div>
+                <span class="font-black text-lg text-slate-950">MecánicaSocial.<span class="text-xs text-slate-400 block font-bold">Escuela</span></span>
+            </div>
+            <a href="#ia-sandbox" class="bg-pink-600 text-white px-4 py-2 rounded-full text-xs font-bold shadow-md">Admisión Virtual</a>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-br from-slate-900 to-pink-950 text-white py-16 px-4 text-center">
+        <h1 class="text-3xl sm:text-4xl font-black mb-4">Formación Abierta con Gobernanza Algorítmica</h1>
+        <p class="text-sm text-slate-300 max-w-xl mx-auto">Plataforma interactiva para la gestión del conocimiento basada en el ecosistema real de la organización.</p>
+    </section>
+
+    <main id="cursos-hub" class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <div class="lg:col-span-1 bg-white p-3 rounded-2xl border border-slate-200 h-[380px] overflow-y-auto custom-scrollbar" id="course-list"></div>
+            <div class="lg:col-span-3 bg-white rounded-3xl border border-slate-200 p-6 flex flex-col justify-between min-h-[350px]" id="course-viewer"></div>
+        </div>
+    </main>
+    <section id="ia-sandbox" class="bg-slate-900 text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-5">
+                <h2 class="text-2xl font-black mb-2">Consola de Admisión (Intake IA)</h2>
+                <p class="text-slate-400 text-xs leading-relaxed">Simulador interactivo del endpoint de admisión que ejecuta las reglas del archivo de prompt <code>prompts/formulario-intake-v1.0.0.yaml</code>.</p>
+            </div>
+            <div class="lg:col-span-7 bg-white text-slate-900 rounded-2xl p-5 shadow-xl">
+                <div class="space-y-3">
+                    <div>
+                        <label class="block text-[11px] font-bold text-slate-500 uppercase">Nombre Postulante</label>
+                        <input type="text" id="intake-name" value="Constanza Valenzuela" class="w-full text-xs border p-2 rounded-lg bg-slate-50">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold text-slate-500 uppercase">Declaración de Objetivos</label>
+                        <textarea id="intake-justification" rows="2" class="w-full text-xs border p-2 rounded-lg bg-slate-50">Deseo adquirir capacidades para supervisar el despliegue ético y transparente de tecnología.</textarea>
+                    </div>
+                    <button onclick="executeIntakeSimulation()" class="w-full bg-slate-900 text-white font-bold text-xs py-2.5 rounded-lg uppercase">Procesar con ms-ia core</button>
+                </div>
+                <div id="api-response-box" class="mt-3 p-3 bg-slate-950 rounded-lg font-mono text-[10px] text-emerald-400 hidden">
+                    <pre id="json-output"></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-slate-950 text-slate-500 py-6 text-center text-xs font-bold border-t border-slate-900">ONG Mecánica Social &copy; 2026</footer>
+    <script>
+        const cursosDataset = [
+            { id: "01", titulo: "Democracia y Ciudadanía", icon: "users", desc: "Bases participativas y fortalecimiento institucional.", archivos: ["Actividad-Principal.md", "Guia-docente.md", "Bibliografia.md"] },
+            { id: "02", titulo: "Historia Política de Chile", icon: "history", desc: "Evolución institucional e hitos de cambio social republicano.", archivos: ["Actividad Principal.md", "Bibliografia.md", "Guia docente.md"] },
+            { id: "03", titulo: "Estado e Instituciones", icon: "building", desc: "Aparato estatal y orgánica de la administración pública.", archivos: ["Actividad-Principal.md", "Bibliografia.md", "Guia Docente.md"] },
+            { id: "12", titulo: "Tecnología e IA", icon: "terminal", desc: "Uso táctico y responsable de plataformas emergentes con foco social.", archivos: ["README.md"] },
+            { id: "16", titulo: "Proyecto Final", icon: "check-square", desc: "Defensa e implementación de una intervención basada en evidencias.", archivos: ["README.md", "01-rubrica-proyecto-final.md"] }
+        ];
+
+        function renderCourseCard(id) {
+            const curso = cursosDataset.find(c => c.id === id);
+            if (!curso) return;
+            document.getElementById("course-viewer").innerHTML = `
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="bg-pink-100 text-pink-600 p-2 rounded-lg"><i data-lucide="${curso.icon}" class="w-5 h-5"></i></div>
+                    <div><span class="text-pink-600 font-bold text-xs block">Módulo #${curso.id}</span><h3 class="text-lg font-black text-slate-900">${curso.titulo}</h3></div>
+                </div>
+                <p class="text-slate-600 text-xs mb-4">${curso.desc}</p>
+                <h4 class="font-bold text-[10px] uppercase text-slate-400 mb-2">Documentos Verificados</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4">${curso.archivos.map(a => `<div class="p-2 border border-slate-200 rounded-lg text-[11px] font-bold text-slate-700 bg-slate-50">📄 \${a}</div>`).join('')}</div>
+            `;
+            lucide.createIcons();
+        }
+
+        function executeIntakeSimulation() {
+            const name = document.getElementById("intake-name").value;
+            const motivation = document.getElementById("intake-justification").value;
+            const response = {
+                metadata: { version: "v1.0.0", timestamp: new Date().toISOString() },
+                solicitud: { postulante: name, curso: "Módulo 01" },
+                evaluacion: { admitido: motivation.length > 20, score: 0.96, analisis: "Alineado con gobernanza ética ms-ia." }
+            };
+            document.getElementById("json-output").textContent = JSON.stringify(response, null, 4);
+            document.getElementById("api-response-box").classList.remove("hidden");
+        }
+
+        const listContainer = document.getElementById("course-list");
+        cursosDataset.forEach(c => {
+            const button = document.createElement("button");
+            button.className = "w-full flex items-center gap-2 px-2 py-2 text-xs font-medium rounded-lg text-slate-600 hover:bg-slate-50 text-left";
+            button.innerHTML = `<span class="bg-slate-100 text-slate-500 font-mono w-4 h-4 rounded flex items-center justify-center text-[10px] font-bold">${c.id}</span> <span class="truncate">${c.titulo}</span>`;
+            button.addEventListener("click", () => renderCourseCard(c.id));
+            listContainer.appendChild(button);
+        });
+        renderCourseCard("01");
+    </script>
+</body>
+</html>

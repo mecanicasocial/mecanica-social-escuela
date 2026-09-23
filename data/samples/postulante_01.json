@@ -1,0 +1,24 @@
+{
+    "metadata": {
+        "id": "MS-ADM-2026-001",
+        "version_schema": "v1.0.0",
+        "origen": "Formulario Intake Virtual"
+    },
+    "postulante": {
+        "nombre_completo": "Constanza Valenzuela",
+        "comuna": "Estación Central",
+        "region": "Metropolitana",
+        "organizacion_base": "Junta de Vecinos Unidad y Progreso"
+    },
+    "postulacion": {
+        "modulo_preferencia": "01",
+        "titulo_preferencia": "Introducción a la Política Democrática",
+        "declaracion_objetivos": "Deseo adquirir capacidades públicas y herramientas metodológicas para el fortalecimiento territorial y el diseño de proyectos comunitarios en mi comuna.",
+        "horas_disponibilidad_semanal": 6
+    },
+    "auditoria_ia_previa": {
+        "score_alineacion_mision": 0.98,
+        "mitigacion_sesgo_geografico": "aprobado",
+        "clasificacion_perfil": "Liderazgo Comunitario"
+    }
+}

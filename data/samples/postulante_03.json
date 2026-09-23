@@ -1,0 +1,24 @@
+{
+    "metadata": {
+        "id": "MS-ADM-2026-003",
+        "version_schema": "v1.0.0",
+        "origen": "Formulario Intake Virtual"
+    },
+    "postulante": {
+        "nombre_completo": "María Inés Aravena",
+        "comuna": "Lota",
+        "region": "Biobío",
+        "organizacion_base": "Colectivo Cultural Carbón y Greda"
+    },
+    "postulacion": {
+        "modulo_preferencia": "04",
+        "titulo_preferencia": "Participación Ciudadana",
+        "declaracion_objetivos": "Busco activar mecanismos de escucha comunitaria y procesos de innovación social que rescaten el patrimonio histórico y dinamicen la economía comunal.",
+        "horas_disponibilidad_semanal": 5
+    },
+    "auditoria_ia_previa": {
+        "score_alineacion_mision": 0.96,
+        "mitigacion_sesgo_geografico": "aprobado",
+        "clasificacion_perfil": "Innovación y Cultura"
+    }
+}

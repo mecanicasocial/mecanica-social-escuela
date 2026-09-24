@@ -1,7 +1,7 @@
 {
     "id_solicitud": "MS-ADM-2026-001",
     "timestamp": "2026-09-23T10:46:00Z",
-    "score_ponderado": 97.7,
+    "score_ponderado": 87.2,
     "salvaguarda_sesgo": {
         "mitigacion_territorial": "aprobado",
         "comuna_evaluada": "Estación Central",

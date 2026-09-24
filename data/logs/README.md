@@ -1,7 +1,7 @@
 # 📁 REGISTRO DE AUDITORÍA Y HISTORIAL DE LOGS DE ADMISIÓN IA
 ## ONG MECÁNICA SOCIAL • ÁREA DE TRANSPARENCIA
 
-Este directorio almacena de forma inmutable los reportes de salida generados por la Consola de Admisión Inteligente de la Escuela Marcelo Orellana Lagos.
+Este directorio almacena los reportes de salida (el historial de git conserva cada versión) generados por la Consola de Admisión Inteligente de la Escuela Marcelo Orellana Lagos.
 
 ### 📐 Estructura Mandatoria del Log:
 Cada archivo de registro guardado en esta carpeta debe adoptar la nomenclatura `log_YYYYMMDD_ID.json` y estructurarse bajo los siguientes campos clave:

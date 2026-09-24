@@ -1,42 +1,25 @@
-# 📘 MANUAL DE DISEÑO CURRICULAR Y GUÍA DOCENTE
-## ONG MECÁNICA SOCIAL &bull; ESCUELA DE FORMACIÓN POLÍTICA
+# 📘 GUÍA DOCENTE INSTITUCIONAL
+## ESCUELA DE FORMACIÓN POLÍTICA MARCELO ORELLANA LAGOS &bull; ONG MECÁNICA SOCIAL
+
+Esta matriz metodológica constituye el estándar obligatorio para todo el cuerpo académico en el diseño de cursos, tutorías y corrección de artefactos institucionales.
 
 ---
 
-### 1. DATOS IDENTIFICATORIOS DEL MÓDULO
-*   **Nombre del Curso:** [Ej: Módulo 01: Democracia y Ciudadanía]
-*   **Código de Ruta:** MS-ESC-[XX]
-*   **Nivel Académico:** Formación Técnico-Social para el Tercer Sector
-*   **Vínculo con el Ecosistema Digital:** Sincronizado con contratos de `ms-ia` (Estatuto INT-001)
+### 1. LINEAMIENTOS ÉTICOS Y MITIGACIÓN DE SESGOS EN LA EVALUACIÓN
+Como docente de la Escuela, la retroalimentación de los entregables debe ceñirse estrictamente a las directrices fundamentales de la organización:
+
+*   **Mitigación de Sesgo Geográfico:** Queda estrictamente prohibido penalizar o subvalorar propuestas provenientes de zonas rurales, campamentos o comunas bajo rezago territorial en Chile. El foco debe estar en la viabilidad interna y no en la accesibilidad centralizada de recursos.
+*   **Mitigación de Sesgo Socioeconómico:** Se debe priorizar y premiar el potencial de transformación comunitaria y el pensamiento crítico ciudadano por sobre la sofisticación técnica del lenguaje formal o académico.
+*   **Supervisión Humana Mandatoria:** La Consola Virtual de IA actúa únicamente como un pre-calificador para aliviar la carga administrativa. La evaluación y calificación final es una atribución eclesiástica exclusiva del juicio crítico del docente.
 
 ---
 
-### 2. PLANIFICACIÓN PEDAGÓGICA (Basada en Evidencias)
+### 2. PROTOCOLO DE REVISIÓN Y ALINEACIÓN DE MARCO LÓGICO
+Antes de emitir una calificación, el profesor debe verificar que el informe del estudiante cumpla rigurosamente con los tres macro-bloques de la plantilla oficial, cruzándolos con los criterios definidos en el motor YAML (`v1.1.0`):
 
-#### A. Objetivos de Aprendizaje
-> Describa de 2 a 3 competencias concretas que el alumno adquirirá al finalizar este módulo.
-1.  ...
-2.  ...
-
-#### B. Contenidos Clave y Desglose
-*   **Unidad 1:** Marco regulatorio y contexto territorial en Chile.
-*   **Unidad 2:** Metodologías de diseño e innovación social basada en evidencias.
-*   **Unidad 3:** Gobernanza algorítmica y fiscalización civil de tecnologías.
+1.  **Diagnóstico Territorial (30%):** Validar que la delimitación del problema incluya datos objetivos, cuantitativos (repositorios de datos abiertos como datos.gob.cl) o fuentes normativas de Chile (Ley N° 20.285 / Ley N° 20.500).
+2.  **Propuesta Estratégica (50%):** Evaluar la lógica de intervención (Fin, Propósito, Componentes y Actividades) con un enfoque participativo explícito que incluya juntas de vecinos, colectivos o redes territoriales.
+3.  **Matriz de Impacto (20%):** Exigir un mínimo de dos indicadores medibles, la correcta indexación del **ID de Solicitud (Intake ID)** y la aceptación firmada de la **Declaración de Transparencia y Ética IA**.
 
 ---
-
-### 3. DINÁMICAS DE TRABAJO PRÁCTICO (El Artefacto Entregable)
-Cada módulo académico debe concluir con el desarrollo de una actividad práctica real por parte del estudiante. Este entregable será auditado por nuestro sistema inteligente institucional.
-
-*   **Descripción de la Actividad:** [Ej: Redacción de una política de transparencia local]
-*   **Criterio de Evaluación Rápida:** Alineado con la rúbrica oficial del repositorio.
-
----
-
-### 4. COMPROMISO ÉTICO DE USO DE IA (Gobernanza Institucional)
-Al redactar esta guía o evaluar los proyectos de los alumnos, el cuerpo docente se compromete a:
-- [ ] Validar que los prompts utilizados no induzcan sesgos algorítmicos.
-- [ ] Fomentar el uso de IA como un co-piloto interactivo, resguardando la soberanía del pensamiento crítico ciudadano.
-
----
-*Documento de Control Interno bajo la Norma de Planificación Estratégica Organizacional de Mecánica Social.*
+*Este documento constituye una matriz regulatoria del Manual de Calidad Pedagógica de la ONG Mecánica Social.*

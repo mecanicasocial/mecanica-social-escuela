@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consola de Admisión Inteligente - Escuela Marcelo Orellana Lagos</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #0284c7;
+            --accent-hover: #0369a1;
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #334155;
+            --text-dark: #0f172a;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            background-color: var(--primary);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+        .nav .brand { font-weight: 800; font-size: 1rem; }
+        .nav a { color: #94a3b8; text-decoration: none; margin-left: 15px; font-size: 0.9rem; }
+        .nav a:hover { color: white; }
+        .hero {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+        .hero h1 { font-size: 2.2rem; color: var(--text-dark); margin-bottom: 12px; font-weight: 800; }
+        .button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover { background-color: var(--accent-hover); }
+        .card { background-color: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
+        input[type="text"], textarea {
+            width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 6px; margin-bottom: 15px; font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="brand">🏛️ ESCUELA MARCELO ORELLANA LA GOS</div>
+            <div>
+                <a href="../docs/bibliografia/README.md">Biblioteca</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Portal de Postulaciones e Intake 2026</h1>
+        <p style="margin-bottom: 20px;">Espacio de formación político-ciudadana. Formato visual integrado en duro.</p>
+        <a class="button" href="../plantillas/entregable.md" download>📁 Descargar Plantilla</a>
+    </div>
+
+    <div class="card">
+        <h2>🤖 Consola de Admisión Inteligente (v1.1.0)</h2>
+        <p style="margin-bottom: 15px; font-size: 0.9rem; color: #64748b;">Mapeo automático con el motor YAML</p>
+        
+        <label style="font-weight:600; display:block; margin-bottom:5px;">Nombre Postulante:</label>
+        <input type="text" id="nombrePostulante" value="Constanza Valenzuela">
+        
+        <label style="font-weight:600; display:block; margin-bottom:5px;">Declaración de Objetivos:</label>
+        <textarea id="objetivos" rows="4">Deseo adquirir capacidades públicas y herramientas metodológicas para el fortalecimiento territorial y el diseño de proyectos comunitarios.</textarea>
+        
+        <button class="button" id="btnProcesar" style="width: 100%;">Procesar Solicitud</button>
+    </div>
+
+    <script>
+    document.getElementById('btnProcesar').addEventListener('click', () => {
+        alert("¡Solicitud Procesada!\nID: INT-2026-" + Math.floor(1000 + Math.random() * 9000));
+    });
+    </script>
+</body>
+</html>

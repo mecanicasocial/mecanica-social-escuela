@@ -1,0 +1,11 @@
+{
+    "id_solicitud": "MS-ADM-2026-003",
+    "componente_evaluado": "Motor Automatizado de Admisiones (YAML v1.1.0)",
+    "score_final_ponderado": 3.34,
+    "desglose_criterios": {
+        "alineacion_mision_score": 3.84,
+        "disponibilidad_tiempo_score": 2,
+        "impacto_territorial_score": 4.0
+    },
+    "analisis_justificado": "El postulante María Inés Aravena de la comuna de Lota ha sido evaluado con éxito excepcional mediante el procesador nativo de contingencia de la ONG."
+}

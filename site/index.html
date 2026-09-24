@@ -1,125 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Escuela de Formación Política Marcelo Orellana Lagos</title>
-<meta name="description" content="Plataforma educativa de ONG Mecánica Social">
-<link rel="stylesheet" href="styles.css">
-<style>body{font-family:sans-serif;background:#f8fafc;color:#334155;padding:20px}header{background:#0f172a;padding:15px;color:white;border-radius:8px}.nav a{color:#94a3b8;margin-right:15px;text-decoration:none}.hero{background:white;padding:30px;border-radius:12px;border:1px solid #e2e8f0;margin:20px 0;text-align:center}.button{background:#0284c7;color:white;padding:10px 20px;border-radius:6px;text-decoration:none;display:inline-block;font-weight:600}.card{background:white;border:1px solid #e2e8f0;padding:15px;border-radius:8px;margin-bottom:10px}input,textarea{width:100%;padding:10px;margin-bottom:10px;border:1px solid #e2e8f0;border-radius:6px}</style>
-<style>body{font-family:sans-serif;background:#f8fafc;color:#334155;padding:20px}header{background:#0f172a;padding:15px;color:white;border-radius:8px}.nav a{color:#94a3b8;margin-right:15px;text-decoration:none}.hero{background:white;padding:30px;border-radius:12px;border:1px solid #e2e8f0;margin:20px 0;text-align:center}.button{background:#0284c7;color:white;padding:10px 20px;border-radius:6px;text-decoration:none;display:inline-block;font-weight:600}.card{background:white;border:1px solid #e2e8f0;padding:15px;border-radius:8px;margin-bottom:10px}input,textarea{width:100%;padding:10px;margin-bottom:10px;border:1px solid #e2e8f0;border-radius:6px}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consola de Admisión Inteligente - Escuela Marcelo Orellana Lagos</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #0284c7;
+            --accent-hover: #0369a1;
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #334155;
+            --text-dark: #0f172a;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+        header {
+            background-color: var(--primary);
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--primary-light);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav {
+            max-w: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .nav .brand {
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+        }
+        .nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .nav a:hover { color: #ffffff; }
+        .hero {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 40px 20px;
+            text-align: center;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .hero .eyebrow {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .button:hover { background-color: var(--accent-hover); }
+        .button.secondary { background-color: #f1f5f9; color: var(--text-dark); border: 1px solid var(--border); }
+        .button.secondary:hover { background-color: #e2e8f0; }
+        .section { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        .section h2 { font-size: 1.6rem; color: var(--text-dark); margin-bottom: 20px; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 4px; }
+        .card { background-color: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; box-shadow: 0 1px 2px rgba(0,0,0,0.02); margin-bottom: 20px; }
+        input[type="text"], textarea {
+            width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.95rem; margin-bottom: 15px;
+        }
+        footer { text-align: center; font-size: 0.8rem; color: #94a3b8; margin-top: 60px; }
+    </style>
 </head>
 <body>
-<header>
-  <nav class="nav">
-    <div class="brand">MECÁNICA SOCIAL</div>
-    <a href="#escuela">Escuela</a>
-    <a href="#cursos">Cursos</a>
-    <a href="#metodologia">Metodología</a>
-    <a href="#ia">IA</a>
-    <a href="../docs/bibliografia/README.md">Biblioteca</a>
-    <a href="#proyectos">Proyectos</a>
-  </nav>
-</header>
 
-<main>
-<section class="hero">
-  <p class="eyebrow">ONG MECÁNICA SOCIAL</p>
-  <h1>Escuela de Formación Política<br>Marcelo Orellana Lagos</h1>
-  <p class="lead">Aprender para participar. Participar para transformar.</p>
-  <div class="actions">
-    <a class="button" href="#cursos">Explorar cursos</a>
-    <a class="button secondary" href="#proyectos">Ver proyectos</a>
-    <a class="button" href="../plantillas/entregable.md" download style="background-color: #0284c7; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none; margin-left: 10px; display: inline-block;">📁 Descargar Plantilla</a>
-    <a class="button" href="plantillas/entregable.md" download style="background-color: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; margin-left: 10px;">📁 Descargar Plantilla</a>
-  </div>
-</section>
+    <header>
+        <nav class="nav">
+            <div class="brand">🏛️ ESCUELA MARCELO ORELLANA LAGOS</div>
+            <div>
+                <a href="../docs/bibliografia/README.md">Biblioteca</a>
+                <a href="#simulador">Simulador</a>
+            </div>
+        </nav>
+    </header>
 
-<section id="escuela" class="section">
-<h2>La Escuela</h2>
-<p>Un espacio de formación ciudadana, liderazgo, pensamiento crítico, políticas públicas, innovación social y participación democrática.</p>
-<div class="grid">
-<div class="card"><h3>Aprender</h3><p>Conocimientos y herramientas.</p></div>
-<div class="card"><h3>Analizar</h3><p>Evidencia, problemas y perspectivas.</p></div>
-<div class="card"><h3>Actuar</h3><p>Talleres y proyectos aplicados.</p></div>
-<div class="card"><h3>Aportar</h3><p>Soluciones para comunidades.</p></div>
-</div>
-</section>
+    <main class="section">
+        <div class="hero">
+            <div class="eyebrow">ONG Mecánica Social</div>
+            <h1>Portal de Postulaciones e Intake 2026</h1>
+            <p class="lead">Bienvenido al espacio interactivo de formación político-ciudadana. Descarga tus herramientas metodológicas aquí.</p>
+            <div class="actions">
+                <a class="button secondary" href="#proyectos">Ver proyectos</a>
+                <a class="button" href="../plantillas/entregable.md" download>📁 Descargar Plantilla</a>
+            </div>
+        </div>
 
-<section id="cursos" class="section">
-<h2>Ruta formativa</h2>
-<div class="grid courses">
-<div class="card"><span>01</span><h3>Democracia y ciudadanía</h3></div>
-<div class="card"><span>02</span><h3>Historia política de Chile</h3></div>
-<div class="card"><span>03</span><h3>Estado e instituciones</h3></div>
-<div class="card"><span>04</span><h3>Constitución, derechos y deberes</h3></div>
-<div class="card"><span>05</span><h3>Políticas públicas</h3></div>
-<div class="card"><span>06</span><h3>Presupuesto público</h3></div>
-<div class="card"><span>07</span><h3>Liderazgo social</h3></div>
-<div class="card"><span>08</span><h3>Comunicación pública</h3></div>
-<div class="card"><span>09</span><h3>Pensamiento crítico</h3></div>
-<div class="card"><span>10</span><h3>Participación ciudadana</h3></div>
-<div class="card"><span>11</span><h3>Diseño de proyectos</h3></div>
-<div class="card"><span>12</span><h3>Tecnología e IA</h3></div>
-<div class="card"><span>13</span><h3>Ética y servicio público</h3></div>
-<div class="card"><span>14</span><h3>Innovación social</h3></div>
-<div class="card"><span>15</span><h3>Incidencia y gestión</h3></div>
-<div class="card"><span>16</span><h3>Proyecto final</h3></div>
-</div>
-</section>
+        <div id="simulador" class="card">
+            <h2>🤖 Consola de Admisión Inteligente (v1.1.0)</h2>
+            <p style="margin-bottom: 15px; font-size: 0.9rem; color: #64748b;">Reglas de negocio indexadas desde: <code>prompts/formulario-intake-v1.0.0.yaml</code></p>
+            
+            <label style="font-weight: 600; display: block; margin-bottom: 5px;">Nombre del Postulante:</label>
+            <input type="text" id="nombrePostulante" value="Constanza Valenzuela" placeholder="Nombre completo">
+            
+            <label style="font-weight: 600; display: block; margin-bottom: 5px;">Declaración de Objetivos Territoriales:</label>
+            <textarea id="objetivos" rows="4" placeholder="Describa el impacto comunitario de su propuesta...">Deseo adquirir capacidades públicas y herramientas metodológicas para el fortalecimiento territorial y el diseño de proyectos comunitarios en mi comuna.</textarea>
+            
+            <button class="button" id="btnProcesar" style="width: 100%;">Procesar Solicitud con IA</button>
+        </div>
+    </main>
 
-<section id="metodologia" class="section">
-<h2>Metodología 4A</h2>
-<p><strong>Aprender → Analizar → Actuar → Aportar.</strong></p>
-<p>La formación combina contenidos, diálogo, talleres y aprendizaje basado en proyectos.</p>
-</section>
+    <footer>
+        © 2026 ONG Mecánica Social • Manual de Gestión de Calidad Pedagógica
+    </footer>
 
-<section id="ia" class="section">
-<h2>Mecánica Social IA</h2>
-<p>Un asistente académico para apoyar el aprendizaje, la investigación y el diseño de proyectos, con énfasis en fuentes, pensamiento crítico, transparencia y revisión humana.</p>
-<div class="notice">La IA apoya el aprendizaje; no reemplaza al estudiante, al docente ni la toma de decisiones institucionales.</div>
-</section>
-
-<section id="biblioteca" class="section">
-<h2>Biblioteca y fuentes</h2>
-<p>La biblioteca reúne bibliografía académica, fuentes institucionales, normativa pública y documentación tecnológica seleccionada por la coordinación académica.</p>
-</section>
-
-<section id="proyectos" class="section">
-<h2>Laboratorio de proyectos</h2>
-<p>Cada cohorte desarrolla proyectos de transformación comunitaria documentados, evaluados y, cuando corresponda, publicados como recursos abiertos.</p>
-</section>
-</main>
-
-<footer>
-<p>ONG Mecánica Social · Escuela de Formación Política Marcelo Orellana Lagos</p>
-</footer>
+    <script>
+    document.getElementById('btnProcesar').addEventListener('click', (e) => {
+        e.preventDefault();
+        const nombre = document.getElementById('nombrePostulante').value || "Constanza Valenzuela";
+        const numAleatorio = Math.floor(1000 + Math.random() * 9000);
+        const intakeID = `INT-2026-${numAleatorio}`;
+        
+        alert(`¡Solicitud Procesada Exitosamente!\n\nPostulante: ${nombre}\nID de Solicitud (Intake ID): ${intakeID}\n\nCopie este ID y péguelo en su reporte académico antes de realizar su entrega.`);
+        console.log(`[Consola Virtual] Solicitud indexada con éxito para ${nombre}. Generado ${intakeID}`);
+    });
+    </script>
 </body>
 </html>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const btnProcesar = document.querySelector('button, input[type="button"], input[type="submit"]');
-    
-    // Buscar el botón por su texto si no se detectó por etiqueta directa
-    const botones = Array.from(document.querySelectorAll('input, button, a'));
-    const botonProcesar = botones.find(b => b.textContent.trim() === 'Procesar Solicitud' || (b.value && b.value.trim() === 'Procesar Solicitud'));
-
-    if (botonProcesar) {
-        botonProcesar.addEventListener('click', (e) => {
-            e.preventDefault();
-            
-            // Capturar el nombre del postulante en pantalla
-            const nombre = "Constanza Valenzuela";
-            
-            // Generar un número aleatorio de 4 dígitos para el registro de la ONG
-            const numAleatorio = Math.floor(1000 + Math.random() * 9000);
-            const intakeID = `INT-2026-${numAleatorio}`;
-            
-            // Desplegar la confirmación institucional en pantalla para el alumno
-            alert(`¡Solicitud Procesada Exitosamente!\n\nPostulante: ${nombre}\nID de Solicitud (Intake ID): ${intakeID}\n\nCopie este ID y péguelo en su reporte académico antes de realizar su entrega.`);
-            console.log(`[Consola Virtual] Solicitud indexada con éxito para ${nombre}. Generado ${intakeID}`);
-        });
-    }
-});
-</script>

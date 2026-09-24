@@ -1,11 +1,14 @@
 {
     "id_solicitud": "MS-ADM-2026-001",
-    "componente_evaluado": "Motor Automatizado de Admisiones (YAML v1.1.0)",
+    "componente_evaluado": "Motor de pre-calificación (YAML v1.1.0)",
+    "estado": "RECOMENDADO_PARA_COMITE",
     "score_final_ponderado": 3.49,
+    "escala": "0 a 4",
     "desglose_criterios": {
         "alineacion_mision_score": 3.92,
         "disponibilidad_tiempo_score": 2.4,
-        "impacto_territorial_score": 4.0
+        "impacto_territorial_score": 4
     },
-    "analisis_justificado": "El postulante Constanza Valenzuela de la comuna de Estación Central ha sido evaluado con éxito excepcional mediante el procesador nativo de contingencia de la ONG."
+    "revision_humana": "PENDIENTE",
+    "analisis_justificado": "Pre-calificación automática de Constanza Valenzuela (comuna: Estación Central). Es solo una recomendación: el comité humano debe ratificar la decisión final."
 }

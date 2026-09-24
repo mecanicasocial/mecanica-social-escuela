@@ -1,11 +1,14 @@
 {
     "id_solicitud": "MS-ADM-2026-002",
-    "componente_evaluado": "Motor Automatizado de Admisiones (YAML v1.1.0)",
+    "componente_evaluado": "Motor de pre-calificación (YAML v1.1.0)",
+    "estado": "RECOMENDADO_PARA_COMITE",
     "score_final_ponderado": 3.66,
+    "escala": "0 a 4",
     "desglose_criterios": {
         "alineacion_mision_score": 3.76,
         "disponibilidad_tiempo_score": 3.2,
-        "impacto_territorial_score": 4.0
+        "impacto_territorial_score": 4
     },
-    "analisis_justificado": "El postulante Carlos Sanhueza de la comuna de San Antonio ha sido evaluado con éxito excepcional mediante el procesador nativo de contingencia de la ONG."
+    "revision_humana": "PENDIENTE",
+    "analisis_justificado": "Pre-calificación automática de Carlos Sanhueza (comuna: San Antonio). Es solo una recomendación: el comité humano debe ratificar la decisión final."
 }

@@ -22,70 +22,33 @@
             background-color: var(--bg-main);
             color: var(--text-main);
             line-height: 1.6;
-            padding-bottom: 40px;
+            padding: 20px;
         }
         header {
             background-color: var(--primary);
             padding: 15px 20px;
-            border-bottom: 1px solid var(--primary-light);
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
         .nav {
-            max-w: 1100px;
-            margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            flex-wrap: wrap;
+            color: white;
         }
-        .nav .brand {
-            color: #ffffff;
-            font-weight: 800;
-            font-size: 1rem;
-            letter-spacing: 0.05em;
-        }
-        .nav a {
-            color: #94a3b8;
-            text-decoration: none;
-            font-size: 0.9rem;
-            margin-left: 20px;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-        .nav a:hover { color: #ffffff; }
+        .nav .brand { font-weight: 800; font-size: 1rem; }
+        .nav a { color: #94a3b8; text-decoration: none; margin-left: 15px; font-size: 0.9rem; }
+        .nav a:hover { color: white; }
         .hero {
-            max-width: 1100px;
-            margin: 40px auto;
+            background: white;
             padding: 40px 20px;
             text-align: center;
-            background: white;
             border-radius: 12px;
             border: 1px solid var(--border);
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
         }
-        .hero .eyebrow {
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 12px;
-        }
-        .hero h1 {
-            font-size: 2.2rem;
-            color: var(--text-dark);
-            margin-bottom: 16px;
-            font-weight: 800;
-        }
-        .actions {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
+        .hero h1 { font-size: 2.2rem; color: var(--text-dark); margin-bottom: 12px; font-weight: 800; }
         .button {
             display: inline-block;
             background-color: var(--accent);
@@ -96,70 +59,47 @@
             font-weight: 600;
             border: none;
             cursor: pointer;
-            transition: background-color 0.2s;
         }
         .button:hover { background-color: var(--accent-hover); }
-        .button.secondary { background-color: #f1f5f9; color: var(--text-dark); border: 1px solid var(--border); }
-        .button.secondary:hover { background-color: #e2e8f0; }
-        .section { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-        .section h2 { font-size: 1.6rem; color: var(--text-dark); margin-bottom: 20px; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 4px; }
-        .card { background-color: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; box-shadow: 0 1px 2px rgba(0,0,0,0.02); margin-bottom: 20px; }
+        .card { background-color: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
         input[type="text"], textarea {
-            width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.95rem; margin-bottom: 15px;
+            width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 6px; margin-bottom: 15px; font-size: 0.95rem;
         }
-        footer { text-align: center; font-size: 0.8rem; color: #94a3b8; margin-top: 60px; }
     </style>
 </head>
 <body>
 
     <header>
-        <nav class="nav">
-            <div class="brand">🏛️ ESCUELA MARCELO ORELLANA LAGOS</div>
+        <div class="nav">
+            <div class="brand">🏛️ ESCUELA MARCELO ORELLANA LA GOS</div>
             <div>
                 <a href="../docs/bibliografia/README.md">Biblioteca</a>
-                <a href="#simulador">Simulador</a>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <main class="section">
-        <div class="hero">
-            <div class="eyebrow">ONG Mecánica Social</div>
-            <h1>Portal de Postulaciones e Intake 2026</h1>
-            <p class="lead">Bienvenido al espacio interactivo de formación político-ciudadana. Descarga tus herramientas metodológicas aquí.</p>
-            <div class="actions">
-                <a class="button secondary" href="#proyectos">Ver proyectos</a>
-                <a class="button" href="../plantillas/entregable.md" download>📁 Descargar Plantilla</a>
-            </div>
-        </div>
+    <div class="hero">
+        <h1>Portal de Postulaciones e Intake 2026</h1>
+        <p style="margin-bottom: 20px;">Espacio de formación político-ciudadana. Formato visual integrado en duro.</p>
+        <a class="button" href="../plantillas/entregable.md" download>📁 Descargar Plantilla</a>
+    </div>
 
-        <div id="simulador" class="card">
-            <h2>🤖 Consola de Admisión Inteligente (v1.1.0)</h2>
-            <p style="margin-bottom: 15px; font-size: 0.9rem; color: #64748b;">Reglas de negocio indexadas desde: <code>prompts/formulario-intake-v1.0.0.yaml</code></p>
-            
-            <label style="font-weight: 600; display: block; margin-bottom: 5px;">Nombre del Postulante:</label>
-            <input type="text" id="nombrePostulante" value="Constanza Valenzuela" placeholder="Nombre completo">
-            
-            <label style="font-weight: 600; display: block; margin-bottom: 5px;">Declaración de Objetivos Territoriales:</label>
-            <textarea id="objetivos" rows="4" placeholder="Describa el impacto comunitario de su propuesta...">Deseo adquirir capacidades públicas y herramientas metodológicas para el fortalecimiento territorial y el diseño de proyectos comunitarios en mi comuna.</textarea>
-            
-            <button class="button" id="btnProcesar" style="width: 100%;">Procesar Solicitud con IA</button>
-        </div>
-    </main>
-
-    <footer>
-        © 2026 ONG Mecánica Social • Manual de Gestión de Calidad Pedagógica
-    </footer>
+    <div class="card">
+        <h2>🤖 Consola de Admisión Inteligente (v1.1.0)</h2>
+        <p style="margin-bottom: 15px; font-size: 0.9rem; color: #64748b;">Mapeo automático con el motor YAML</p>
+        
+        <label style="font-weight:600; display:block; margin-bottom:5px;">Nombre Postulante:</label>
+        <input type="text" id="nombrePostulante" value="Constanza Valenzuela">
+        
+        <label style="font-weight:600; display:block; margin-bottom:5px;">Declaración de Objetivos:</label>
+        <textarea id="objetivos" rows="4">Deseo adquirir capacidades públicas y herramientas metodológicas para el fortalecimiento territorial y el diseño de proyectos comunitarios.</textarea>
+        
+        <button class="button" id="btnProcesar" style="width: 100%;">Procesar Solicitud</button>
+    </div>
 
     <script>
-    document.getElementById('btnProcesar').addEventListener('click', (e) => {
-        e.preventDefault();
-        const nombre = document.getElementById('nombrePostulante').value || "Constanza Valenzuela";
-        const numAleatorio = Math.floor(1000 + Math.random() * 9000);
-        const intakeID = `INT-2026-${numAleatorio}`;
-        
-        alert(`¡Solicitud Procesada Exitosamente!\n\nPostulante: ${nombre}\nID de Solicitud (Intake ID): ${intakeID}\n\nCopie este ID y péguelo en su reporte académico antes de realizar su entrega.`);
-        console.log(`[Consola Virtual] Solicitud indexada con éxito para ${nombre}. Generado ${intakeID}`);
+    document.getElementById('btnProcesar').addEventListener('click', () => {
+        alert("¡Solicitud Procesada!\nID: INT-2026-" + Math.floor(1000 + Math.random() * 9000));
     });
     </script>
 </body>

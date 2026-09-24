@@ -7,4 +7,4 @@ Resume de forma clara los cambios introducidos y especifica qué cursos o docume
 - [ ] No existen enlaces rotos ni faltas de ortografía en los archivos Markdown.
 
 ## 🔗 Vinculación Institucional
-Closes #1
+Relacionado con: (indicar el número del issue, por ejemplo #12)

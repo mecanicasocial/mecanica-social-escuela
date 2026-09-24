@@ -1,0 +1,11 @@
+{
+  "id_solicitud": "INT-2026-BATCH02",
+  "componente_evaluado": "Formulario Intake Virtual v1.1.0",
+  "score_final_ponderado": 3.4,
+  "desglose_criterios": {
+    "Seccion_1_Diagnostico": "Adecuado - Presenta datos del territorio chileno.",
+    "Seccion_2_Propuesta": "En desarrollo - Requiere profundizar enfoque de Marco Logico.",
+    "Seccion_3_Matriz_Impacto": "Adecuado - Cumple con la Declaracion de Etica de IA."
+  },
+  "analisis_justificado": "El postulante demuestra una solida alineacion con la mision de ONG Mecanica Social. Evaluacion pre-calificada bajo la Matriz de Alineacion de la Escuela Marcelo Orellana Lagos."
+}

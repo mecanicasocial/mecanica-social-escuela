@@ -11,15 +11,12 @@
 
 ---
 
-### 2. DESCRIPCIÓN DEL RETO (El Escenario Real)
-> El docente debe describir un problema del mundo real (comunitario, gubernamental o tecnológico) que el alumno deba resolver aplicando los conocimientos de la unidad.
+### 2. DESCRIPCIÓN DEL RETO CON ENFOQUE DE MARCO LÓGICO
+> El docente debe estructurar el caso de estudio comunitario o gubernamental asegurando el desarrollo mandatorio de las siguientes fases analíticas de Marco Lógico:
 
-*   **Contexto del Problema:**
-    [Escriba aquí el caso de estudio o la falla en el sector público/civil a abordar]
-*   **Instrucciones Paso a Paso para el Estudiante:**
-    1.  ...
-    2.  ...
-    3.  ...
+*   **Fase 1: Diagnóstico y Árbol de Problemas:** El estudiante debe identificar una problemática territorial chilena delimitada, detectando sus causas raíces y efectos directos mediante datos objetivos.
+*   **Fase 2: Análisis de Involucrados:** Mapear los actores clave del territorio (Juntas de Vecinos, Municipalidades, Organizaciones Civiles) determinando sus intereses, problemas percibidos y recursos.
+*   **Fase 3: Estructuración de la Propuesta:** Diseñar la lógica de intervención (Fin, Propósito, Componentes y Actividades) garantizando la factibilidad de la solución comunitaria.
 
 ---
 

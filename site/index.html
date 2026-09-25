@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Académico - Escuela de Formación Política Marcelo Orellana Lagos</title>
+    <!-- CDN Estable y Compatible de Tailwind CSS -->
     <script src="https://jsdelivr.net"></script>
-    <script src="https://unpkg.com"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary: #0f172a;
+            --color-primary-light: #1e293b;
+            --color-accent: #0284c7;
+            --color-accent-hover: #0369a1;
+        }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-700 antialiased font-sans">
 
     <!-- Navbar Saneada con URLs Reales de Producción -->
-    <header class="bg-slate-900 text-white sticky top-0 z-50 border-b border-slate-800 shadow-md">
+    <header class="bg-[#0f172a] text-white sticky top-0 z-50 border-b border-slate-800 shadow-md">
         <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center space-x-2 font-bold text-lg tracking-wide text-sky-400">
                 <span>🏛️</span>
@@ -30,9 +38,9 @@
         <div class="bg-white border border-slate-200 rounded-2xl p-8 text-center shadow-sm mb-10">
             <span class="text-xs font-bold tracking-widest text-sky-600 uppercase bg-sky-50 px-3 py-1 rounded-full">ONG Mecánica Social</span>
             <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-4 mb-3 tracking-tight">Ecosistema de Formación Político-Ciudadana</h1>
-            <p class="text-slate-500 max-w-2xl mx-auto text-sm">Portal académico unificado y auditado según el Marco Lógico. Descarga la matriz oficial para construir tus proyectos territoriales.</p>
-            <div class="mt-6 flex justify-center">
-                <a href="../plantillas/entregable.md" download class="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-5 py-2.5 rounded-lg shadow-sm transition text-sm">
+            <p class="text-slate-500 max-w-2xl mx-auto text-sm mb-6">Portal académico unificado y auditado según el Marco Lógico. Descarga la matriz oficial para construir tus proyectos territoriales.</p>
+            <div class="flex justify-center">
+                <a href="../plantillas/entregable.md" download class="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-5 py-2.5 rounded-lg shadow-sm transition text-sm inline-block">
                     📁 Descargar Plantilla Obligatoria
                 </a>
             </div>
@@ -46,7 +54,8 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs">
+                <!-- Ruta 1 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
                     <h3 class="font-bold text-sky-600 text-lg mb-3">• Ruta 01: Educación Cívica</h3>
                     <ul class="text-sm text-slate-600 space-y-2 pl-4 list-disc">
                         <li><strong>Curso 01:</strong> Democracia y Ciudadanía</li>
@@ -56,7 +65,8 @@
                     </ul>
                 </div>
 
-                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs">
+                <!-- Ruta 2 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
                     <h3 class="font-bold text-emerald-600 text-lg mb-3">• Ruta 02: Gestión Comunitaria</h3>
                     <ul class="text-sm text-slate-600 space-y-2 pl-4 list-disc">
                         <li><strong>Curso 07:</strong> Liderazgo Social y Territorial</li>
@@ -66,7 +76,8 @@
                     </ul>
                 </div>
 
-                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs">
+                <!-- Ruta 3 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
                     <h3 class="font-bold text-indigo-600 text-lg mb-3">• Ruta 03: Políticas Públicas</h3>
                     <ul class="text-sm text-slate-600 space-y-2 pl-4 list-disc">
                         <li><strong>Curso 05:</strong> Introducción a las Políticas Públicas</li>
@@ -76,7 +87,8 @@
                     </ul>
                 </div>
 
-                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-xs">
+                <!-- Ruta 4 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
                     <h3 class="font-bold text-amber-600 text-lg mb-3">• Ruta 04: Proyectos e Innovación</h3>
                     <ul class="text-sm text-slate-600 space-y-2 pl-4 list-disc">
                         <li><strong>Curso 11:</strong> Diseño y Evaluación de Proyectos</li>
@@ -88,7 +100,7 @@
             </div>
         </section>
 
-        <!-- Consola de Admisión Inteligente Saneada -->
+        <!-- Consola de Admisión Inteligente -->
         <section id="simulador" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
             <h2 class="text-xl font-bold text-slate-900 mb-2">🤖 Consola de Admisión Inteligente (Demostración)</h2>
             <p class="text-sm text-slate-500 mb-6">Simulador visual de interfaz. Los cálculos de rúbricas reales se procesan por consola externa.</p>
@@ -101,7 +113,7 @@
                     <label class="block text-sm font-semibold text-slate-700 mb-1">Declaración de Objetivos:</label>
                     <textarea id="objetivos" rows="3" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm bg-slate-50">Deseo adquirir capacidades públicas para el fortalecimiento territorial.</textarea>
                 </div>
-                <button id="btnProcesar" class="w-full bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold py-2.5 rounded-lg transition">
+                <button id="btnProcesar" class="w-full bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold py-2.5 rounded-lg transition cursor-pointer">
                     Procesar Solicitud de Demostración
                 </button>
             </div>
@@ -118,7 +130,6 @@
         const code = Math.floor(1000 + Math.random() * 9000);
         alert(`✨ Entorno de Demostración Saneado ✨\n\nPostulante: ${nombre}\nID generado: INT-2026-${code}\n\nNota de Auditoría: Esta interfaz es una simulación visual. Las rúbricas oficiales se calculan de forma externa.`);
     });
-    lucide.createIcons();
     </script>
 </body>
 </html>

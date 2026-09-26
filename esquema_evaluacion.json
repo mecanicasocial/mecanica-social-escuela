@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["id_solicitud", "evaluacion", "puntaje_total"],
+  "properties": {
+    "id_solicitud": { "type": "string" },
+    "puntaje_total": { "type": "number", "minimum": 0, "maximum": 100 },
+    "evaluacion": {
+      "type": "object",
+      "required": ["fortalezas", "aspectos_mejora"],
+      "properties": {
+        "fortalezas": { "type": "array", "items": { "type": "string" } },
+        "aspectos_mejora": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

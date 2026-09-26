@@ -1,0 +1,19 @@
+{
+  "name": "mecanica-social-escuela",
+  "version": "1.0.0",
+  "description": "Plataforma principal y núcleo del ecosistema digital de la ONG Mecánica Social. Diseñada para formar liderazgos institucionales y fortalecer capacidades técnicas en los territorios.",
+  "main": "procesador_evaluacion.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1"
+  }
+}

@@ -1,13 +1,9 @@
-# Bibliografía
+# Bibliografía Oficial - 01-democracia-ciudadania
 
-## Obligatoria
+*Sincronizado automáticamente desde Mecánica Social Biblioteca*
 
-- Bobbio, Norberto. El futuro de la democracia.
-- Ley N° 20.500 sobre Asociaciones y Participación Ciudadana.
-- Guía de Formación Cívica. Biblioteca del Congreso Nacional.
+### [fuente-0004] Ley de Transparencia Municipal y Acceso a la Información
+- **Tipo:** normativa
+- **Licencia:** Gobierno Transparente
+- **Revisor:** Equipo Jurídico Mecánica Social
 
-## Complementaria
-
-- Dahl, Robert. La Democracia.
-- Sartori, Giovanni. ¿Qué es la democracia?
-- PNUD. Desarrollo Humano en Chile.

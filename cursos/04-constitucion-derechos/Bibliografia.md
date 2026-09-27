@@ -5,5 +5,3 @@
 _Todavía no hay fuentes de Biblioteca etiquetadas para este curso._
 
 <!-- FIN-SINCRONIZADO: todo lo que escribas debajo de esta línea se conserva siempre -->
-
-# Bibliografia - 04-constitucion-derechos

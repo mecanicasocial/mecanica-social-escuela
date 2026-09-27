@@ -1,9 +1,7 @@
 # Bibliografía Oficial - 11-diseno-proyectos
 
-*Sincronizado automáticamente desde Mecánica Social Biblioteca*
+*Sincronizado automáticamente desde Mecánica Social Biblioteca — no edites a mano esta sección, se sobrescribe en cada corrida. Para agregar contenido propio, escríbelo debajo del marcador de más abajo.*
 
-### [fuente-0001] Plan Estratégico de Formación Cívica
-- **Tipo:** informe
-- **Licencia:** CC-BY-4.0
-- **Revisor:** Equipo Mecánica Social
+_Todavía no hay fuentes de Biblioteca etiquetadas para este curso._
 
+<!-- FIN-SINCRONIZADO: todo lo que escribas debajo de esta línea se conserva siempre -->

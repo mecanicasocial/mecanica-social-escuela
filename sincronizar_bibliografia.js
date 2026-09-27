@@ -13,6 +13,10 @@ function generarBloqueSincronizado(modulo, fuentes) {
   let contenido = `# Bibliografía Oficial - ${modulo}\n\n`;
   contenido += `*Sincronizado automáticamente desde Mecánica Social Biblioteca — no edites a mano esta sección, se sobrescribe en cada corrida. Para agregar contenido propio, escríbelo debajo del marcador de más abajo.*\n\n`;
 
+  if (fuentes.length === 0) {
+    contenido += `_Todavía no hay fuentes de Biblioteca etiquetadas para este curso._\n\n`;
+  }
+
   fuentes.forEach(f => {
     contenido += `### [${f.id}] ${f.titulo}\n`;
     contenido += `- **Autor:** ${f.autor || 'S/I'}\n`;
@@ -39,15 +43,21 @@ function procesarCatalogo(catalogo) {
     });
   });
 
+  // Antes solo se procesaban los cursos que YA tenían al menos una fuente en Biblioteca,
+  // así que un curso sin fuentes sincronizadas (como el 02) nunca recibía el mismo
+  // encabezado/marcador que los demás y terminaba con un formato distinto. Ahora se
+  // recorren TODAS las carpetas de curso, para que la estructura sea idéntica en los 16,
+  // tengan o no fuentes sincronizadas todavía.
+  const carpetaCursos = path.join(__dirname, 'cursos');
+  const todosLosCursos = fs.readdirSync(carpetaCursos).filter(nombre =>
+    fs.statSync(path.join(carpetaCursos, nombre)).isDirectory()
+  );
+
   let actualizados = 0;
 
-  Object.keys(mapaCursos).forEach(modulo => {
-    const rutaBiblio = path.join(__dirname, 'cursos', modulo, 'Bibliografia.md');
-
-    if (!fs.existsSync(path.dirname(rutaBiblio))) {
-      console.warn(`[AVISO] El módulo '${modulo}' referenciado en Biblioteca no existe como carpeta de curso en Escuela. Se omite.`);
-      return;
-    }
+  todosLosCursos.forEach(modulo => {
+    const rutaBiblio = path.join(carpetaCursos, modulo, 'Bibliografia.md');
+    mapaCursos[modulo] = mapaCursos[modulo] || [];
 
     let contenidoManual = '';
     if (fs.existsSync(rutaBiblio)) {

@@ -1,16 +1,10 @@
+# Bibliografía Oficial - 02-historia-politica-chile
 
----
+*Sincronizado automáticamente desde Mecánica Social Biblioteca — no edites a mano esta sección, se sobrescribe en cada corrida. Para agregar contenido propio, escríbelo debajo del marcador de más abajo.*
 
-# 6. `bibliografia.md`
+_Todavía no hay fuentes de Biblioteca etiquetadas para este curso._
 
-```markdown
----
-curso_id: curso-02
-curso: Historia Política de Chile
-tipo_documento: bibliografia
-version: "1.0"
-estado: borrador
----
+<!-- FIN-SINCRONIZADO: todo lo que escribas debajo de esta línea se conserva siempre -->
 
 # Bibliografía
 
@@ -136,45 +130,48 @@ Para incorporar un recurso:
 ```markdown
 ### Apellido, Nombre
 
-**Título:**  
-**Año:**  
-**Editorial o institución:**  
-**Tipo de fuente:** Primaria / Secundaria / Institucional  
-**Unidad relacionada:**  
-**Uso pedagógico:**  
-**Acceso:**  
-**Licencia o condiciones de uso:**  
+**Título:**
+**Año:**
+**Editorial o institución:**
+**Tipo de fuente:** Primaria / Secundaria / Institucional
+**Unidad relacionada:**
+**Uso pedagógico:**
+**Acceso:**
+**Licencia o condiciones de uso:**
 **Fecha de consulta:**
+```
 
-Formato de referencia sugerido
-Libro
+### Formato de referencia sugerido
 
-Apellido, Nombre. Título. Ciudad: Editorial, año.
-Capítulo
+**Libro**
 
-Apellido, Nombre. “Título del capítulo”. En Título del libro,
-editado por Nombre Apellido, páginas. Ciudad: Editorial, año.
-Artículo
+> Apellido, Nombre. *Título*. Ciudad: Editorial, año.
 
-Apellido, Nombre. “Título del artículo”. Nombre de la revista,
-volumen, número, año, páginas.
-Documento institucional
+**Capítulo**
 
-Institución. Título del documento. Ciudad: Institución, año.
-Recurso web
+> Apellido, Nombre. "Título del capítulo". En *Título del libro*, editado por Nombre Apellido, páginas. Ciudad: Editorial, año.
 
-Institución o autoría. “Título”. Fecha, si está disponible.
-Enlace. Consultado el día mes año.
-Control de calidad
+**Artículo**
+
+> Apellido, Nombre. "Título del artículo". *Nombre de la revista*, volumen, número, año, páginas.
+
+**Documento institucional**
+
+> Institución. *Título del documento*. Ciudad: Institución, año.
+
+**Recurso web**
+
+> Institución o autoría. "Título". Fecha, si está disponible. Enlace. Consultado el día mes año.
+
+### Control de calidad
+
 Antes de incorporar una referencia:
 
-La obra existe y sus datos se han comprobado.
-La autoría está correctamente escrita.
-La edición utilizada está identificada.
-El enlace procede de un sitio legítimo.
-Se conocen las condiciones de acceso o uso.
-La lectura está relacionada con un resultado de aprendizaje.
-El recurso es accesible para el nivel del curso.
-La referencia no duplica innecesariamente otro recurso.
-
-  
+- La obra existe y sus datos se han comprobado.
+- La autoría está correctamente escrita.
+- La edición utilizada está identificada.
+- El enlace procede de un sitio legítimo.
+- Se conocen las condiciones de acceso o uso.
+- La lectura está relacionada con un resultado de aprendizaje.
+- El recurso es accesible para el nivel del curso.
+- La referencia no duplica innecesariamente otro recurso.

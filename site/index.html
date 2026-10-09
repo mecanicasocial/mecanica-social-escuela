@@ -100,36 +100,72 @@
             </div>
         </section>
 
-        <!-- Consola de Admisión Inteligente -->
-        <section id="simulador" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
-            <h2 class="text-xl font-bold text-slate-900 mb-2">🤖 Consola de Admisión Inteligente (Demostración)</h2>
-            <p class="text-sm text-slate-500 mb-6">Simulador visual de interfaz. Los cálculos de rúbricas reales se procesan por consola externa.</p>
-            <div class="space-y-4">
-                <div>
-                    <label class="block text-sm font-semibold text-slate-700 mb-1">Nombre del Postulante:</label>
-                    <input type="text" id="nombrePostulante" value="Constanza Valenzuela" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm bg-slate-50">
-                </div>
-                <div>
-                    <label class="block text-sm font-semibold text-slate-700 mb-1">Declaración de Objetivos:</label>
-                    <textarea id="objetivos" rows="3" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm bg-slate-50">Deseo adquirir capacidades públicas para el fortalecimiento territorial.</textarea>
-                </div>
-                <button id="btnProcesar" class="w-full bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold py-2.5 rounded-lg transition cursor-pointer">
-                    Procesar Solicitud de Demostración
-                </button>
-            </div>
-        </section>
+        <!-- Formulario de Postulación -->
+<section id="seccion-postulacion" class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+
+    <h2 class="text-xl font-bold text-slate-900 mb-2">
+        📝 Postulación a Programas de Formación
+    </h2>
+
+    <p class="text-sm text-slate-500 mb-6">
+        Completa tu motivación y acepta la política de privacidad para enviar tu postulación.
+    </p>
+
+    <form id="form-postulacion" class="space-y-4">
+
+        <div>
+            <label
+                for="postulacion-texto"
+                class="block text-sm font-semibold text-slate-700 mb-1">
+                Motivación
+            </label>
+
+            <textarea
+                id="postulacion-texto"
+                rows="6"
+                class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm"
+                placeholder="Cuéntanos por qué deseas participar en nuestros programas">
+            </textarea>
+        </div>
+
+        <div>
+            <label class="flex items-start gap-2 text-sm text-slate-700">
+
+                <input
+                    type="checkbox"
+                    id="acepta-politica"
+                    class="mt-1">
+
+                <span>
+                    Acepto la política de privacidad.
+                </span>
+
+            </label>
+        </div>
+
+        <button
+            type="button"
+            id="btn-evaluar-ia"
+            class="w-full bg-sky-600 hover:bg-sky-700 text-white text-sm font-semibold py-2.5 rounded-lg transition">
+
+            Enviar postulación
+
+        </button>
+
+        <div
+            id="ia-output"
+            class="text-sm rounded-lg p-3 bg-slate-50 border border-slate-200 hidden">
+        </div>
+
+    </form>
+
+</section>
+
     </main>
 
     <footer class="text-center py-6 text-xs text-slate-400 border-t border-slate-200 bg-white">
         © 2026 ONG Mecánica Social • Proceso Auditado Saneado
     </footer>
 
-    <script>
-    document.getElementById('btnProcesar').addEventListener('click', function() {
-        const nombre = document.getElementById('nombrePostulante').value || "Postulante";
-        const code = Math.floor(1000 + Math.random() * 9000);
-        alert(`✨ Entorno de Demostración Saneado ✨\n\nPostulante: ${nombre}\nID generado: INT-2026-${code}\n\nNota de Auditoría: Esta interfaz es una simulación visual. Las rúbricas oficiales se calculan de forma externa.`);
-    });
-    </script>
 </body>
 </html>
